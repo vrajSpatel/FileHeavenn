@@ -6,13 +6,13 @@ const helmet = require('helmet');
 
 const app = express();
 
-app.use(helmet())
-app.use(cors())
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(helmet());
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.get('/api/databasecheck', (req, res) => {
-    // readyState 1 means connected to dtaset
+    // readyState 1 means connected to dataset
     const dbConnected = mongoose.connection.readyState === 1;
 
     res.status(200).json({
@@ -20,6 +20,11 @@ app.get('/api/databasecheck', (req, res) => {
         db: dbConnected ? 'connected' : 'disconnected',
     });
 });
+
+// all auth routes
+const authRoutes = require('./routes/auth.routes')
+app.use('/api/auth', authRoutes)
+
 
 
 module.exports = app;
