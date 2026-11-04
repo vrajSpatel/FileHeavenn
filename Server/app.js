@@ -25,6 +25,8 @@ app.get('/api/databasecheck', (req, res) => {
 const authRoutes = require('./routes/auth.routes')
 app.use('/api/auth', authRoutes)
 
+const folderRoutes = require('./routes/folder.routes')
+app.use('/api/folders', folderRoutes)
 
 
 module.exports = app;
