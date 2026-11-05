@@ -28,5 +28,8 @@ app.use('/api/auth', authRoutes)
 const folderRoutes = require('./routes/folder.routes')
 app.use('/api/folders', folderRoutes)
 
+const fileRoute = require('./routes/file.routes')
+app.use('/api/files', fileRoute)
+
 
 module.exports = app;
