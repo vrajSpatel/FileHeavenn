@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* top navbar */
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.project-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-logo {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: white;
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* second navbar with all the pages */
+.page-navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-link {
+    color: #333;
+    text-decoration: none;
+    padding: 4px 0;
+}
+
+.page-link:hover {
+    color: #2c3e50;
+}
+
+.page-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #2c3e50;
+}
+
+.page-content {
+    padding: 24px;
+}
+
+.login-link {
+    color: white;
+}
+
+/* buttons and inputs */
+button {
+    padding: 6px 12px;
+    border: 1px solid #2c3e50;
+    border-radius: 4px;
+    background-color: white;
+    color: #2c3e50;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2c3e50;
+    color: white;
+}
+
+input,
+select,
+textarea {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+
+/* login, register and share forms */
+.form-box {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form-box textarea {
+    height: 80px;
+}
+
+/* create folder and upload forms */
+.inline-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* one row for every folder or file */
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 6px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.item-name {
+    margin: 0;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.item-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Share and Open are links, so make them look like the buttons */
+.item-actions a {
+    padding: 6px 12px;
+    border: 1px solid #2c3e50;
+    border-radius: 4px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.small-text {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.empty-text {
+    color: #888;
+}
+
+.message {
+    color: #2c3e50;
+    font-weight: bold;
+}
